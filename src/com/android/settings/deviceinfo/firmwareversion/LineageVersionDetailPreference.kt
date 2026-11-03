@@ -47,7 +47,7 @@ class LineageVersionDetailPreference :
         get() = R.string.os_firmware_version_purpose
 
     override val title: Int
-        get() = org.lineageos.platform.internal.R.string.lineage_version
+        get() = R.string.driftvane_version
 
     override val indexable
         get() = false
@@ -66,7 +66,10 @@ class LineageVersionDetailPreference :
     }
 
     override fun getSummary(context: Context): CharSequence =
-        SystemProperties.get(LINEAGE_VERSION_PROPERTY, context.getString(R.string.unknown));
+        SystemProperties.get(
+            DRIFTVANE_VERSION_PROPERTY,
+            SystemProperties.get(LINEAGE_VERSION_PROPERTY, context.getString(R.string.unknown)),
+        )
 
     // return true swallows the click event, while return false will start the intent
     override fun onPreferenceClick(preference: Preference): Boolean {
@@ -106,6 +109,8 @@ class LineageVersionDetailPreference :
         const val DELAY_TIMER_MILLIS = 500L
 
         const val LINEAGE_VERSION_PROPERTY: String = "ro.lineage.version"
+        // DriftVaneOS: show our own version, fall back to LineageOS's if it's missing
+        const val DRIFTVANE_VERSION_PROPERTY: String = "ro.driftvane.version"
 
         const val PLATLOGO_PACKAGE_NAME: String = "org.lineageos.lineageparts"
         const val PLATLOGO_ACTIVITY_CLASS: String = PLATLOGO_PACKAGE_NAME + ".logo.PlatLogoActivity"

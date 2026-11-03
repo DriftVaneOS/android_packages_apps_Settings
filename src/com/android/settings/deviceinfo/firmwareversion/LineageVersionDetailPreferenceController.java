@@ -43,6 +43,8 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
     private static final String KEY_LINEAGE_VERSION_PROP = "ro.lineage.version";
+    // DriftVaneOS: show our own version, fall back to LineageOS's if it's missing
+    private static final String KEY_DRIFTVANE_VERSION_PROP = "ro.driftvane.version";
 
     private static final String PLATLOGO_PACKAGE_NAME = "org.lineageos.lineageparts";
     private static final String PLATLOGO_ACTIVITY_CLASS =
@@ -77,8 +79,9 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_LINEAGE_VERSION_PROP,
-                mContext.getString(R.string.unknown));
+        return SystemProperties.get(KEY_DRIFTVANE_VERSION_PROP,
+                SystemProperties.get(KEY_LINEAGE_VERSION_PROP,
+                        mContext.getString(R.string.unknown)));
     }
 
     @Override
