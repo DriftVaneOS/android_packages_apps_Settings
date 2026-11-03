@@ -137,6 +137,19 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <!-- DriftVaneOS: volume panel style (designs from RisingOS) -->
+    <PreferenceCategory
+        android:key="category_key_driftvane_volume"
+        android:title="@string/driftvane_volume_category">
+
+        <com.android.settings.driftvane.SystemSettingListPreference
+            android:key="custom_volume_styles"
+            android:title="@string/driftvane_volume_style_title"
+            android:entries="@array/driftvane_volume_style_entries"
+            android:entryValues="@array/driftvane_volume_style_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
     <!-- DriftVaneOS: choose what the dynamic bar shows -->
     <PreferenceCategory
         android:key="category_key_driftvane_dynamic_bar_events"

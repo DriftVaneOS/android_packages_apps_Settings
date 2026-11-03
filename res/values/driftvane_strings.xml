@@ -51,4 +51,19 @@
     <string name="driftvane_dbe_biometric_unlock_summary">Fingerprint or face unlock</string>
     <string name="driftvane_dbe_sports_title">Sports</string>
     <string name="driftvane_dbe_sports_summary">Live scores</string>
+    <!-- Volume panel style -->
+    <string name="driftvane_volume_category">Volume panel</string>
+    <string name="driftvane_volume_style_title">Volume slider style</string>
+    <string-array name="driftvane_volume_style_entries">
+        <item>Stock</item>
+        <item>Double layer</item>
+        <item>Gradient</item>
+        <item>Neumorph</item>
+        <item>Neumorph outline</item>
+        <item>Outline</item>
+        <item>Shaded layer</item>
+    </string-array>
+    <string-array name="driftvane_volume_style_values" translatable="false">
+        <item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item>
+    </string-array>
 </resources>
