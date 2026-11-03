@@ -172,6 +172,12 @@
         android:key="category_key_driftvane_look"
         android:title="@string/driftvane_look_category">
 
+        <lineageos.preference.SystemSettingSwitchPreference
+            android:key="driftvane_statusbar_logo"
+            android:title="@string/driftvane_statusbar_logo_title"
+            android:summary="@string/driftvane_statusbar_logo_summary"
+            android:defaultValue="false" />
+
         <Preference
             android:key="driftvane_wallpapers"
             android:title="@string/driftvane_wallpapers_title"

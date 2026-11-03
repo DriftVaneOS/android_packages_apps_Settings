@@ -81,4 +81,6 @@
     <string name="driftvane_telegram_title">Telegram</string>
     <string name="driftvane_credits_title">Credits</string>
     <string name="driftvane_credits_summary" translatable="false">Built on LineageOS. Dynamic bar from crDroid / AxionAOSP. Volume styles inspired by RisingOS (minaripenguin). Forlorn icons by DrDisagree.</string>
+    <string name="driftvane_statusbar_logo_title">Status bar logo</string>
+    <string name="driftvane_statusbar_logo_summary">Show the DriftVaneOS logo next to the clock</string>
 </resources>
