@@ -8,18 +8,6 @@
     android:key="driftvane_enhancements"
     android:title="@string/driftvane_enhancements_title">
 
-    <!-- Shade -->
-    <PreferenceCategory
-        android:key="category_key_driftvane_shade"
-        android:title="@string/driftvane_shade_category">
-
-        <lineageos.preference.SecureSettingSwitchPreference
-            android:key="dual_shade"
-            android:title="@string/driftvane_split_shade_title"
-            android:summary="@string/driftvane_split_shade_summary"
-            android:defaultValue="false" />
-    </PreferenceCategory>
-
     <!-- DriftVaneOS: dynamic bar (ported from crDroid) -->
     <PreferenceCategory
         android:key="category_key_driftvane"
