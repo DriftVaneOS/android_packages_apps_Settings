@@ -137,6 +137,127 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <!-- DriftVaneOS: choose what the dynamic bar shows -->
+    <PreferenceCategory
+        android:key="category_key_driftvane_dynamic_bar_events"
+        android:title="@string/driftvane_dynamic_bar_events_title"
+        android:dependency="ax_dynamic_bar_enabled">
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_media"
+            android:title="@string/driftvane_dbe_media_title"
+            android:summary="@string/driftvane_dbe_media_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_call"
+            android:title="@string/driftvane_dbe_call_title"
+            android:summary="@string/driftvane_dbe_call_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_promoted_ongoing"
+            android:title="@string/driftvane_dbe_promoted_ongoing_title"
+            android:summary="@string/driftvane_dbe_promoted_ongoing_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_timer"
+            android:title="@string/driftvane_dbe_timer_title"
+            android:summary="@string/driftvane_dbe_timer_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_stopwatch"
+            android:title="@string/driftvane_dbe_stopwatch_title"
+            android:summary="@string/driftvane_dbe_stopwatch_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_audio_recording"
+            android:title="@string/driftvane_dbe_audio_recording_title"
+            android:summary="@string/driftvane_dbe_audio_recording_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_aosp_chip"
+            android:title="@string/driftvane_dbe_aosp_chip_title"
+            android:summary="@string/driftvane_dbe_aosp_chip_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_notification"
+            android:title="@string/driftvane_dbe_notification_title"
+            android:summary="@string/driftvane_dbe_notification_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_charging"
+            android:title="@string/driftvane_dbe_charging_title"
+            android:summary="@string/driftvane_dbe_charging_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_bluetooth"
+            android:title="@string/driftvane_dbe_bluetooth_title"
+            android:summary="@string/driftvane_dbe_bluetooth_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_alarm"
+            android:title="@string/driftvane_dbe_alarm_title"
+            android:summary="@string/driftvane_dbe_alarm_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_ringer"
+            android:title="@string/driftvane_dbe_ringer_title"
+            android:summary="@string/driftvane_dbe_ringer_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_torch"
+            android:title="@string/driftvane_dbe_torch_title"
+            android:summary="@string/driftvane_dbe_torch_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_vpn"
+            android:title="@string/driftvane_dbe_vpn_title"
+            android:summary="@string/driftvane_dbe_vpn_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_hotspot"
+            android:title="@string/driftvane_dbe_hotspot_title"
+            android:summary="@string/driftvane_dbe_hotspot_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_clipboard"
+            android:title="@string/driftvane_dbe_clipboard_title"
+            android:summary="@string/driftvane_dbe_clipboard_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_app_switch"
+            android:title="@string/driftvane_dbe_app_switch_title"
+            android:summary="@string/driftvane_dbe_app_switch_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_biometric_unlock"
+            android:title="@string/driftvane_dbe_biometric_unlock_title"
+            android:summary="@string/driftvane_dbe_biometric_unlock_summary"
+            android:defaultValue="false" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_event_sports"
+            android:title="@string/driftvane_dbe_sports_title"
+            android:summary="@string/driftvane_dbe_sports_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:key="category_key_color"
         android:title="@string/category_name_color"

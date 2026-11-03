@@ -9,7 +9,46 @@
     <!-- Display settings: DriftVaneOS section -->
     <string name="driftvane_category_title" translatable="false">DriftVaneOS</string>
     <string name="driftvane_dynamic_bar_title">Dynamic bar</string>
-    <string name="driftvane_dynamic_bar_summary">Show music, timers, calls, charging and more in a live pill on the status bar</string>
+    <string name="driftvane_dynamic_bar_summary">Show music, calls and ongoing activities in a live pill on the status bar</string>
     <string name="driftvane_dynamic_bar_keyguard_title">Dynamic bar on lock screen</string>
     <string name="driftvane_dynamic_bar_keyguard_summary">Also show the dynamic bar on the lock screen</string>
+    <string name="driftvane_dynamic_bar_events_title">Dynamic bar: what to show</string>
+    <string name="driftvane_dbe_media_title">Media</string>
+    <string name="driftvane_dbe_media_summary">Music and video playing</string>
+    <string name="driftvane_dbe_call_title">Calls</string>
+    <string name="driftvane_dbe_call_summary">Ongoing phone calls</string>
+    <string name="driftvane_dbe_promoted_ongoing_title">Ongoing activities</string>
+    <string name="driftvane_dbe_promoted_ongoing_summary">Navigation, rides, deliveries and other live updates</string>
+    <string name="driftvane_dbe_timer_title">Timers</string>
+    <string name="driftvane_dbe_timer_summary">Running timers</string>
+    <string name="driftvane_dbe_stopwatch_title">Stopwatch</string>
+    <string name="driftvane_dbe_stopwatch_summary">Running stopwatch</string>
+    <string name="driftvane_dbe_audio_recording_title">Recording</string>
+    <string name="driftvane_dbe_audio_recording_summary">Audio recording in progress</string>
+    <string name="driftvane_dbe_aosp_chip_title">System chips</string>
+    <string name="driftvane_dbe_aosp_chip_summary">Screen recording, casting and other system chips</string>
+    <string name="driftvane_dbe_notification_title">Notifications</string>
+    <string name="driftvane_dbe_notification_summary">New notification previews</string>
+    <string name="driftvane_dbe_charging_title">Charging</string>
+    <string name="driftvane_dbe_charging_summary">Charging status</string>
+    <string name="driftvane_dbe_bluetooth_title">Bluetooth devices</string>
+    <string name="driftvane_dbe_bluetooth_summary">Earbuds and other devices connecting</string>
+    <string name="driftvane_dbe_alarm_title">Alarms</string>
+    <string name="driftvane_dbe_alarm_summary">Upcoming alarms</string>
+    <string name="driftvane_dbe_ringer_title">Ringer mode</string>
+    <string name="driftvane_dbe_ringer_summary">Sound, vibrate and silent changes</string>
+    <string name="driftvane_dbe_torch_title">Flashlight</string>
+    <string name="driftvane_dbe_torch_summary">Flashlight on</string>
+    <string name="driftvane_dbe_vpn_title">VPN</string>
+    <string name="driftvane_dbe_vpn_summary">VPN connected</string>
+    <string name="driftvane_dbe_hotspot_title">Hotspot</string>
+    <string name="driftvane_dbe_hotspot_summary">Hotspot on</string>
+    <string name="driftvane_dbe_clipboard_title">Clipboard</string>
+    <string name="driftvane_dbe_clipboard_summary">Copied text</string>
+    <string name="driftvane_dbe_app_switch_title">App switch</string>
+    <string name="driftvane_dbe_app_switch_summary">Switching between apps</string>
+    <string name="driftvane_dbe_biometric_unlock_title">Unlock</string>
+    <string name="driftvane_dbe_biometric_unlock_summary">Fingerprint or face unlock</string>
+    <string name="driftvane_dbe_sports_title">Sports</string>
+    <string name="driftvane_dbe_sports_summary">Live scores</string>
 </resources>
