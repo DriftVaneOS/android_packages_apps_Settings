@@ -118,6 +118,25 @@
             settings:controller="com.android.settings.accessibility.TextReadingFragmentForDisplaySettingsController"/>
     </PreferenceCategory>
 
+    <!-- DriftVaneOS: dynamic bar (ported from crDroid) -->
+    <PreferenceCategory
+        android:key="category_key_driftvane"
+        android:title="@string/driftvane_category_title">
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_enabled"
+            android:title="@string/driftvane_dynamic_bar_title"
+            android:summary="@string/driftvane_dynamic_bar_summary"
+            android:defaultValue="true" />
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="ax_dynamic_bar_keyguard_enabled"
+            android:title="@string/driftvane_dynamic_bar_keyguard_title"
+            android:summary="@string/driftvane_dynamic_bar_keyguard_summary"
+            android:dependency="ax_dynamic_bar_enabled"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:key="category_key_color"
         android:title="@string/category_name_color"

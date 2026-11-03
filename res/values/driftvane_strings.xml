@@ -6,4 +6,10 @@
 <resources>
     <!-- About phone: DriftVaneOS version row title -->
     <string name="driftvane_version" translatable="false">DriftVaneOS version</string>
+    <!-- Display settings: DriftVaneOS section -->
+    <string name="driftvane_category_title" translatable="false">DriftVaneOS</string>
+    <string name="driftvane_dynamic_bar_title">Dynamic bar</string>
+    <string name="driftvane_dynamic_bar_summary">Show music, timers, calls, charging and more in a live pill on the status bar</string>
+    <string name="driftvane_dynamic_bar_keyguard_title">Dynamic bar on lock screen</string>
+    <string name="driftvane_dynamic_bar_keyguard_summary">Also show the dynamic bar on the lock screen</string>
 </resources>
