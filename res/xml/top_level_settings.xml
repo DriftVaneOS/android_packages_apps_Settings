@@ -120,6 +120,15 @@
             android:summary="@string/wallpaper_dashboard_summary"
             settings:highlightableMenuKey="@string/menu_key_wallpaper"
             settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+
+        <!-- DriftVaneOS -->
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.android.settings.driftvane.DriftVaneEnhancements"
+            android:icon="@drawable/ic_settings_driftvane"
+            android:key="top_level_driftvane"
+            android:order="-5"
+            android:title="@string/driftvane_enhancements_title"
+            android:summary="@string/driftvane_enhancements_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

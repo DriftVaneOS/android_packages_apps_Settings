@@ -66,4 +66,19 @@
     <string-array name="driftvane_volume_style_values" translatable="false">
         <item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item>
     </string-array>
+    <!-- DriftVane Enhancements -->
+    <string name="driftvane_enhancements_title" translatable="false">DriftVane Enhancements</string>
+    <string name="driftvane_enhancements_summary">Dynamic bar, volume panel, shade and more</string>
+    <string name="driftvane_shade_category">Notification shade</string>
+    <string name="driftvane_split_shade_title">Separate Quick Settings</string>
+    <string name="driftvane_split_shade_summary">Swipe down on the left for notifications and on the right for Quick Settings. Turn off to combine them.</string>
+    <string name="driftvane_volume_top_title">Volume panel at the top</string>
+    <string name="driftvane_volume_top_summary">Show a wide volume bar across the top of the screen</string>
+    <string name="driftvane_look_category">Look and feel</string>
+    <string name="driftvane_wallpapers_title">Wallpapers</string>
+    <string name="driftvane_wallpapers_summary">Pick a DriftVaneOS wallpaper</string>
+    <string name="driftvane_about_category">About DriftVaneOS</string>
+    <string name="driftvane_telegram_title">Telegram</string>
+    <string name="driftvane_credits_title">Credits</string>
+    <string name="driftvane_credits_summary" translatable="false">Built on LineageOS. Dynamic bar from crDroid / AxionAOSP. Volume styles inspired by RisingOS (minaripenguin). Forlorn icons by DrDisagree.</string>
 </resources>
