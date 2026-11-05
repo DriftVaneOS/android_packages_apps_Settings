@@ -20,6 +20,20 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
+    <!-- DriftVaneOS: Enhancements first -->
+    <PreferenceCategory
+        android:order="-150"
+        android:key="top_level_driftvane_category"
+        android:layout="@layout/settingslib_untitled_preference_category">
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.android.settings.driftvane.DriftVaneEnhancements"
+            android:icon="@drawable/ic_settings_driftvane"
+            android:key="top_level_driftvane"
+            android:order="-10"
+            android:title="@string/driftvane_enhancements_title"
+            android:summary="@string/driftvane_enhancements_summary" />
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:order="-140"
         android:key="top_level_account_category"
@@ -120,15 +134,6 @@
             android:summary="@string/wallpaper_dashboard_summary"
             settings:highlightableMenuKey="@string/menu_key_wallpaper"
             settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
-
-        <!-- DriftVaneOS -->
-        <com.android.settings.widget.HomepagePreference
-            android:fragment="com.android.settings.driftvane.DriftVaneEnhancements"
-            android:icon="@drawable/ic_settings_driftvane"
-            android:key="top_level_driftvane"
-            android:order="-5"
-            android:title="@string/driftvane_enhancements_title"
-            android:summary="@string/driftvane_enhancements_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
