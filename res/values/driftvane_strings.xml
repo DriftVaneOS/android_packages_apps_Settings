@@ -84,20 +84,6 @@
     <string name="driftvane_statusbar_logo_title">Status bar logo</string>
     <string name="driftvane_statusbar_logo_summary">Show the DriftVaneOS logo next to the clock</string>
     <string name="driftvane_fp_icon_title">Fingerprint icon</string>
-    <string name="driftvane_settings_style_title">Settings style</string>
-    <string-array name="driftvane_settings_style_entries">
-        <item>Stock</item>
-        <item>Live tiles</item>
-        <item>Device card</item>
-        <item>Category chips</item>
-    </string-array>
-    <string-array name="driftvane_settings_style_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
     <string-array name="driftvane_fp_icon_entries">
         <item>Stock</item>
         <item>Ripple</item>

@@ -153,30 +153,6 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         return true;
     }
 
-    private int mDriftStyle = -1;
-
-    @Override
-    protected void displayResourceTilesToScreen(PreferenceScreen screen) {
-        super.displayResourceTilesToScreen(screen);
-        // DriftVaneOS: Settings home style (Live tiles / Device card / Category chips).
-        // Runs every time the page is (re)built, so the style can't get wiped by a refresh.
-        mDriftStyle = com.android.settings.driftvane.DriftHomepage.style(getContext());
-        com.android.settings.driftvane.DriftHomepage.apply(this, mDriftStyle, screen);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        // style changed in setup or DriftVane enhancements: rebuild the page
-        if (mDriftStyle != -1
-                && com.android.settings.driftvane.DriftHomepage.style(getContext()) != mDriftStyle
-                && getActivity() != null) {
-            getActivity().recreate();
-            return;
-        }
-        com.android.settings.driftvane.DriftHomepage.refresh(this);
-    }
-
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
