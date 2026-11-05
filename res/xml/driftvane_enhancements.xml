@@ -20,6 +20,18 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <!-- DriftVaneOS: Quick Settings -->
+    <PreferenceCategory
+        android:key="category_key_driftvane_qs"
+        android:title="@string/driftvane_qs_category">
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="driftvane_qs_classic"
+            android:title="@string/driftvane_qs_classic_title"
+            android:summary="@string/driftvane_qs_classic_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
     <!-- DriftVaneOS: dynamic bar (ported from crDroid) -->
     <PreferenceCategory
         android:key="category_key_driftvane"

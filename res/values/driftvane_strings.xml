@@ -99,4 +99,8 @@
     <string name="driftvane_lockscreen_category">Lock screen</string>
     <string name="driftvane_glance_title">Glance stack</string>
     <string name="driftvane_glance_summary">Swipeable cards above the fingerprint sensor: music, battery and next alarm</string>
+    <!-- Classic Quick Settings -->
+    <string name="driftvane_qs_category">Quick Settings</string>
+    <string name="driftvane_qs_classic_title">Classic Quick Settings</string>
+    <string name="driftvane_qs_classic_summary">Big tiles, two per row, filled with your accent color when on</string>
 </resources>
