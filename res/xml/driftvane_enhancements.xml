@@ -172,6 +172,13 @@
         android:key="category_key_driftvane_look"
         android:title="@string/driftvane_look_category">
 
+        <com.android.settings.driftvane.SystemSettingListPreference
+            android:key="driftvane_fp_icon"
+            android:title="@string/driftvane_fp_icon_title"
+            android:entries="@array/driftvane_fp_icon_entries"
+            android:entryValues="@array/driftvane_fp_icon_values"
+            android:defaultValue="0" />
+
         <lineageos.preference.SystemSettingSwitchPreference
             android:key="driftvane_statusbar_logo"
             android:title="@string/driftvane_statusbar_logo_title"

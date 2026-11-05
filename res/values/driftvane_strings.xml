@@ -83,4 +83,16 @@
     <string name="driftvane_credits_summary" translatable="false">Built on LineageOS. Dynamic bar from crDroid / AxionAOSP. Volume styles inspired by RisingOS (minaripenguin). Forlorn icons by DrDisagree.</string>
     <string name="driftvane_statusbar_logo_title">Status bar logo</string>
     <string name="driftvane_statusbar_logo_summary">Show the DriftVaneOS logo next to the clock</string>
+    <string name="driftvane_fp_icon_title">Fingerprint icon</string>
+    <string-array name="driftvane_fp_icon_entries">
+        <item>Stock</item>
+        <item>Ripple</item>
+        <item>Dots</item>
+        <item>Ring</item>
+        <item>Vane</item>
+        <item>Scan</item>
+    </string-array>
+    <string-array name="driftvane_fp_icon_values" translatable="false">
+        <item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item>
+    </string-array>
 </resources>
