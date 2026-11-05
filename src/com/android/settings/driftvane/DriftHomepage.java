@@ -68,10 +68,12 @@ public final class DriftHomepage {
                 UserHandle.USER_CURRENT);
     }
 
+    /** Entries moved into the Live tiles (kept so the tiles can still open them). */
+    private static final java.util.Map<String, Preference> sMoved = new java.util.HashMap<>();
+
     /** Adds the header for the current style to the top of the Settings homepage. */
-    public static void apply(PreferenceFragmentCompat fragment, int style) {
+    public static void apply(PreferenceFragmentCompat fragment, int style, PreferenceScreen screen) {
         try {
-            final PreferenceScreen screen = fragment.getPreferenceScreen();
             if (screen == null || style == 0) return;
             final Context c = fragment.getPreferenceManager().getContext();
             if (screen.findPreference(HEADER_KEY) != null) return;
@@ -80,10 +82,13 @@ public final class DriftHomepage {
             header.setOrder(-10000);
             screen.addPreference(header);
             if (style == 1) {
-                // these live in the tiles now
+                // these live in the tiles now: take them out of the list
                 for (String k : TILE_KEYS) {
                     Preference p = screen.findPreference(k);
-                    if (p != null) p.setVisible(false);
+                    if (p != null && p.getParent() != null) {
+                        sMoved.put(k, p);
+                        p.getParent().removePreference(p);
+                    }
                 }
             } else if (style == 2) {
                 colorIcons(screen);
@@ -137,7 +142,19 @@ public final class DriftHomepage {
     /** Opens a homepage entry exactly as if it had been tapped in the list. */
     private static void open(PreferenceFragmentCompat f, String key) {
         Preference p = f.findPreference(key);
-        if (p != null) f.onPreferenceTreeClick(p);
+        if (p == null) p = sMoved.get(key);
+        if (p == null) return;
+        if (p.getFragment() != null) {
+            f.onPreferenceTreeClick(p);
+        } else if (p.getIntent() != null) {
+            try {
+                f.startActivity(p.getIntent());
+            } catch (Throwable t) {
+                Log.w(TAG, "open " + key, t);
+            }
+        } else {
+            f.onPreferenceTreeClick(p);
+        }
     }
 
     // ------------------------------------------------------------------ S2 colors
