@@ -95,4 +95,8 @@
     <string-array name="driftvane_fp_icon_values" translatable="false">
         <item>0</item><item>1</item><item>2</item><item>3</item><item>4</item><item>5</item>
     </string-array>
+    <!-- Lock screen glance stack -->
+    <string name="driftvane_lockscreen_category">Lock screen</string>
+    <string name="driftvane_glance_title">Glance stack</string>
+    <string name="driftvane_glance_summary">Swipeable cards above the fingerprint sensor: music, battery and next alarm</string>
 </resources>

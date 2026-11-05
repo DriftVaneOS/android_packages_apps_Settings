@@ -8,6 +8,18 @@
     android:key="driftvane_enhancements"
     android:title="@string/driftvane_enhancements_title">
 
+    <!-- DriftVaneOS: lock screen -->
+    <PreferenceCategory
+        android:key="category_key_driftvane_lockscreen"
+        android:title="@string/driftvane_lockscreen_category">
+
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="driftvane_lockscreen_glance"
+            android:title="@string/driftvane_glance_title"
+            android:summary="@string/driftvane_glance_summary"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
     <!-- DriftVaneOS: dynamic bar (ported from crDroid) -->
     <PreferenceCategory
         android:key="category_key_driftvane"
