@@ -173,6 +173,13 @@
         android:title="@string/driftvane_look_category">
 
         <com.android.settings.driftvane.SystemSettingListPreference
+            android:key="driftvane_settings_style"
+            android:title="@string/driftvane_settings_style_title"
+            android:entries="@array/driftvane_settings_style_entries"
+            android:entryValues="@array/driftvane_settings_style_values"
+            android:defaultValue="0" />
+
+        <com.android.settings.driftvane.SystemSettingListPreference
             android:key="driftvane_fp_icon"
             android:title="@string/driftvane_fp_icon_title"
             android:entries="@array/driftvane_fp_icon_entries"
