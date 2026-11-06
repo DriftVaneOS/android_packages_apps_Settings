@@ -48,7 +48,7 @@
             android:title="@string/driftvane_dynamic_bar_keyguard_title"
             android:summary="@string/driftvane_dynamic_bar_keyguard_summary"
             android:dependency="ax_dynamic_bar_enabled"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- DriftVaneOS: volume panel style (designs from RisingOS) -->
@@ -61,7 +61,7 @@
             android:title="@string/driftvane_volume_style_title"
             android:entries="@array/driftvane_volume_style_entries"
             android:entryValues="@array/driftvane_volume_style_values"
-            android:defaultValue="0" />
+            android:defaultValue="5" />
 
         <lineageos.preference.SystemSettingSwitchPreference
             android:key="driftvane_volume_panel_top"
