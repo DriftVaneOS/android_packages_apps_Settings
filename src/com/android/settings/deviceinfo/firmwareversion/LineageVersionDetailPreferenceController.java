@@ -46,9 +46,10 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
     // DriftVaneOS: show our own version, fall back to LineageOS's if it's missing
     private static final String KEY_DRIFTVANE_VERSION_PROP = "ro.driftvane.version";
 
-    private static final String PLATLOGO_PACKAGE_NAME = "org.lineageos.lineageparts";
+    // DriftVaneOS: our own easter egg instead of LineageOS's
+    private static final String PLATLOGO_PACKAGE_NAME = "com.android.settings";
     private static final String PLATLOGO_ACTIVITY_CLASS =
-            PLATLOGO_PACKAGE_NAME + ".logo.PlatLogoActivity";
+            "com.android.settings.driftvane.DriftVaneEggActivity";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];

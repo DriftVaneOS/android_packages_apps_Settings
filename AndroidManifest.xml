@@ -6312,5 +6312,13 @@
 
         <!-- This is the longest AndroidManifest.xml ever. -->
 
+        <!-- DriftVaneOS easter egg: tap the DriftVaneOS version in About phone -->
+        <activity
+            android:name=".driftvane.DriftVaneEggActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:label="DriftVaneOS"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
     </application>
 </manifest>

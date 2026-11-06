@@ -112,8 +112,9 @@ class LineageVersionDetailPreference :
         // DriftVaneOS: show our own version, fall back to LineageOS's if it's missing
         const val DRIFTVANE_VERSION_PROPERTY: String = "ro.driftvane.version"
 
-        const val PLATLOGO_PACKAGE_NAME: String = "org.lineageos.lineageparts"
-        const val PLATLOGO_ACTIVITY_CLASS: String = PLATLOGO_PACKAGE_NAME + ".logo.PlatLogoActivity"
+        // DriftVaneOS: our own easter egg instead of LineageOS's
+        const val PLATLOGO_PACKAGE_NAME: String = "com.android.settings"
+        const val PLATLOGO_ACTIVITY_CLASS: String = "com.android.settings.driftvane.DriftVaneEggActivity"
     }
 }
 // LINT.ThenChange(LineageVersionDetailPreferenceController.java)
