@@ -32,6 +32,22 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <!-- DriftVaneOS: status bar icon styles (packs from crDroid android_vendor_themes) -->
+    <PreferenceCategory
+        android:key="category_key_driftvane_icons"
+        android:title="@string/driftvane_icons_category">
+
+        <com.android.settings.driftvane.DriftOverlayListPreference
+            android:key="android.theme.customization.signal_icon"
+            android:title="@string/driftvane_signal_icons_title"
+            android:dialogTitle="@string/driftvane_signal_icons_title" />
+
+        <com.android.settings.driftvane.DriftOverlayListPreference
+            android:key="android.theme.customization.wifi_icon"
+            android:title="@string/driftvane_wifi_icons_title"
+            android:dialogTitle="@string/driftvane_wifi_icons_title" />
+    </PreferenceCategory>
+
     <!-- DriftVaneOS: dynamic bar (ported from crDroid) -->
     <PreferenceCategory
         android:key="category_key_driftvane"
