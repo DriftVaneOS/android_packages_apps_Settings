@@ -46,6 +46,11 @@
             android:key="android.theme.customization.wifi_icon"
             android:title="@string/driftvane_wifi_icons_title"
             android:dialogTitle="@string/driftvane_wifi_icons_title" />
+
+        <com.android.settings.driftvane.DriftOverlayListPreference
+            android:key="android.theme.customization.battery_style"
+            android:title="@string/driftvane_battery_style_title"
+            android:dialogTitle="@string/driftvane_battery_style_title" />
     </PreferenceCategory>
 
     <!-- DriftVaneOS: dynamic bar (ported from crDroid) -->

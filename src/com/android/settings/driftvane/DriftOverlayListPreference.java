@@ -35,6 +35,7 @@ public class DriftOverlayListPreference extends ListPreference {
     private static final String DEFAULT = "default";
     private static final String TARGET_ANDROID = "android";
     private static final String SYSUI_SUFFIX = ".systemui";
+    private static final String TARGET_SYSUI = "com.android.systemui";
 
     private final IOverlayManager mOverlayManager;
     private final Handler mMain = new Handler(Looper.getMainLooper());
@@ -74,7 +75,10 @@ public class DriftOverlayListPreference extends ListPreference {
         final PackageManager pm = getContext().getPackageManager();
         final List<String[]> items = new ArrayList<>(); // {label, package}
         String selected = DEFAULT;
-        for (OverlayInfo info : overlays(TARGET_ANDROID)) {
+        // icon styles have an "android" part; battery styles only target SystemUI
+        List<OverlayInfo> list = overlays(TARGET_ANDROID);
+        if (list.isEmpty()) list = overlays(TARGET_SYSUI);
+        for (OverlayInfo info : list) {
             String label;
             try {
                 label = pm.getApplicationInfo(info.packageName, 0).loadLabel(pm).toString();
@@ -87,7 +91,8 @@ public class DriftOverlayListPreference extends ListPreference {
         items.sort((a, b) -> a[0].compareToIgnoreCase(b[0]));
         final CharSequence[] entries = new CharSequence[items.size() + 1];
         final CharSequence[] values = new CharSequence[items.size() + 1];
-        entries[0] = getContext().getString(R.string.driftvane_iconpack_default);
+        entries[0] = getContext().getString(getKey().endsWith("battery_style")
+                ? R.string.driftvane_battery_style_default : R.string.driftvane_iconpack_default);
         values[0] = DEFAULT;
         for (int i = 0; i < items.size(); i++) {
             entries[i + 1] = items.get(i)[0];
@@ -104,7 +109,7 @@ public class DriftOverlayListPreference extends ListPreference {
             boolean ok = true;
             try {
                 if (DEFAULT.equals(pkg)) {
-                    for (String target : new String[] {TARGET_ANDROID, "com.android.systemui"}) {
+                    for (String target : new String[] {TARGET_ANDROID, TARGET_SYSUI}) {
                         for (OverlayInfo info : overlays(target)) {
                             if (info.isEnabled()) {
                                 mOverlayManager.setEnabled(info.packageName, false, USER_SYSTEM);
@@ -113,10 +118,8 @@ public class DriftOverlayListPreference extends ListPreference {
                     }
                 } else {
                     ok = mOverlayManager.setEnabledExclusiveInCategory(pkg, USER_SYSTEM);
-                    try {
+                    if (mOverlayManager.getOverlayInfo(pkg + SYSUI_SUFFIX, USER_SYSTEM) != null) {
                         mOverlayManager.setEnabledExclusiveInCategory(pkg + SYSUI_SUFFIX, USER_SYSTEM);
-                    } catch (Exception e) {
-                        Log.w(TAG, "no SystemUI part for " + pkg, e);
                     }
                 }
             } catch (Exception e) {

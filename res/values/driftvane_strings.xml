@@ -80,7 +80,7 @@
     <string name="driftvane_about_category">About DriftVaneOS</string>
     <string name="driftvane_telegram_title">Telegram</string>
     <string name="driftvane_credits_title">Credits</string>
-    <string name="driftvane_credits_summary" translatable="false">Built on LineageOS. Dynamic bar from crDroid / AxionAOSP. Volume styles inspired by RisingOS (minaripenguin). Status bar icon packs by DrDisagree, Advaith Bhat, rdx420 and F5LAYD, via crDroid / AxionOS.</string>
+    <string name="driftvane_credits_summary" translatable="false">Built on LineageOS. Dynamic bar from crDroid / AxionAOSP. Volume styles inspired by RisingOS (minaripenguin). Status bar icon packs by DrDisagree, Advaith Bhat, rdx420 and F5LAYD, battery styles from Iconify, all via crDroid / AxionOS.</string>
     <string name="driftvane_statusbar_logo_title">Status bar logo</string>
     <string name="driftvane_statusbar_logo_summary">Show the DriftVaneOS logo next to the clock</string>
     <string name="driftvane_fp_icon_title">Fingerprint icon</string>
@@ -108,4 +108,6 @@
     <string name="driftvane_signal_icons_title">Signal icon style</string>
     <string name="driftvane_wifi_icons_title">Wi-Fi icon style</string>
     <string name="driftvane_iconpack_default">Forlorn (default)</string>
+    <string name="driftvane_battery_style_title">Battery style</string>
+    <string name="driftvane_battery_style_default">Default (from Status bar settings)</string>
 </resources>
