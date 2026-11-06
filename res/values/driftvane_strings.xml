@@ -53,6 +53,8 @@
     <string name="driftvane_dbe_sports_summary">Live scores</string>
     <!-- Volume panel style -->
     <string name="driftvane_volume_category">Volume panel</string>
+    <string name="driftvane_axion_volume_title">AxionOS volume panel</string>
+    <string name="driftvane_axion_volume_summary">The AxionOS panel with the ringer switch and expandable sliders. Turn off to use the styles below. Restart SystemUI to apply</string>
     <string name="driftvane_volume_style_title">Volume slider style</string>
     <string-array name="driftvane_volume_style_entries">
         <item>Stock</item>

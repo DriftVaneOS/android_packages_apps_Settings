@@ -84,7 +84,15 @@
         android:key="category_key_driftvane_volume"
         android:title="@string/driftvane_volume_category">
 
+        <lineageos.preference.SecureSettingSwitchPreference
+            android:key="driftvane_axion_volume"
+            android:title="@string/driftvane_axion_volume_title"
+            android:summary="@string/driftvane_axion_volume_summary"
+            android:disableDependentsState="true"
+            android:defaultValue="true" />
+
         <com.android.settings.driftvane.SystemSettingListPreference
+            android:dependency="driftvane_axion_volume"
             android:key="custom_volume_styles"
             android:title="@string/driftvane_volume_style_title"
             android:entries="@array/driftvane_volume_style_entries"
@@ -92,6 +100,7 @@
             android:defaultValue="5" />
 
         <lineageos.preference.SystemSettingSwitchPreference
+            android:dependency="driftvane_axion_volume"
             android:key="driftvane_volume_panel_top"
             android:title="@string/driftvane_volume_top_title"
             android:summary="@string/driftvane_volume_top_summary"
