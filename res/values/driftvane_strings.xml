@@ -110,4 +110,8 @@
     <string name="driftvane_iconpack_default">Forlorn (default)</string>
     <string name="driftvane_battery_style_title">Battery style</string>
     <string name="driftvane_battery_style_default">Default (from Status bar settings)</string>
+    <!-- Restart SystemUI -->
+    <string name="driftvane_restart_systemui_title">Restart SystemUI</string>
+    <string name="driftvane_restart_systemui_summary">Reload the status bar, lock screen and Quick Settings</string>
+    <string name="driftvane_restart_systemui_toast">Restarting SystemUI…</string>
 </resources>

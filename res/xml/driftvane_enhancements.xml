@@ -8,6 +8,13 @@
     android:key="driftvane_enhancements"
     android:title="@string/driftvane_enhancements_title">
 
+    <!-- DriftVaneOS: restart SystemUI (very top) -->
+    <com.android.settings.driftvane.DriftRestartSystemUiPreference
+        android:key="driftvane_restart_systemui"
+        android:title="@string/driftvane_restart_systemui_title"
+        android:summary="@string/driftvane_restart_systemui_summary"
+        android:icon="@drawable/ic_driftvane_restart" />
+
     <!-- DriftVaneOS: lock screen -->
     <PreferenceCategory
         android:key="category_key_driftvane_lockscreen"
